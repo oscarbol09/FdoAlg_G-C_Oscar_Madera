@@ -5,47 +5,79 @@ document.getElementById("correctas").innerHTML = correctas;
 document.getElementById("incorrectas").innerHTML = incorrectas;
 
 var pregunta = {
-    pregunta: "¿En qué año descubrio Colón America?",
-    opciones: "1894,1492,1623,1925",
+    pregunta: "¿En colombia, cuál es la droga que más se consume?",
+    opciones: "La Cocaina,La Marihuana,El Éxtasis,La Heroina",
     correcta: 1,
     puntuacion: 1
 };
 
 var pregunta2 = {
-    pregunta: "¿Cuáles son los colores de la bandera de Colombia?",
-    opciones: "Amarillo-Azul-Rojo,Verde-Rojo-Violeta,Fucsia-Naranja",
-    correcta: 0,
+    pregunta: "¿Según el Observatorio de Drogas de Colombia, qué porcentaje de los consumidores, consumen Marihuana?",
+    opciones: "50%,87%,30%",
+    correcta: 1,
     puntuacion: 1
 };
 
 var pregunta3 = {
-    pregunta: "¿Cuándo ocurrió el Bogotazo?",
-    opciones: "24 de julio de 1956,4 de julio de 1991,9 de abril de 1948",
-    correcta: 2,
+    pregunta: "¿Cuál es el rango de edad en el cuál se consume más cocaina?",
+    opciones: "18-24,25-40,12-17",
+    correcta: 0,
     puntuacion: 1
 
 };
 
 var pregunta4 = {
-    pregunta: "¿En qué fecha ocurrió la masacre de las bananeras?",
-    opciones: "Diciembre 6 de 1928,1 de diciembre de 1949,7 de enero de 1964",
-    correcta: 0,
+    pregunta: "¿Cuál es el porcentaje de la población colombiana que consume alcohol?",
+    opciones: "80%,10%,50%",
+    correcta: 2,
     puntuacion: 1
 
 };
 
 var pregunta5 = {
-    pregunta: "¿Qué presidente inicio el proceso de industrialización en Colombia?",
-    opciones: "Rafael Reyes,Jorge Holguín Mallarino,Alfonso López Pumarejo",
-    correcta: 0,
+    pregunta: "¿Se puede dejar de consumir drogas en pocos días?",
+    opciones: "Si,No,No Sé",
+    correcta: 1,
     puntuacion: 1
 
 };
 
 var pregunta6 = {
-    pregunta: "¿Quién declaro la guerra de los 1000 días?",
-    opciones: "Juan Francisco Gómez y Paulo E.,Gabriel Vargas Santos y Rafael Uribe Uribe,General Benjamín Herrera y Foción Soto",
+    pregunta: "¿Como se llama el dispositivo que atenua los sintomas de la abstinencia a los opioides?",
+    opciones: "NSS-2 Bridge,Subutex,Chantix-27",
     correcta: 0,
+    puntuacion: 1
+
+};
+
+var pregunta7 = {
+    pregunta: "¿Cuales son las mejores alternativas para la prevensión de uso de drogas?",
+    opciones: "Consumir en menos cantidad,Jugar video-Juegos,Rutina de actividades fisicas",
+    correcta: 2,
+    puntuacion: 1
+
+};
+
+var pregunta8 = {
+    pregunta: "¿Qué otras actividades alternativas se recomiendan para la prevensión?",
+    opciones: "Paracaidismo,Arte,Jardinería",
+    correcta: 1,
+    puntuacion: 1
+
+};
+
+var pregunta9 = {
+    pregunta: "¿Cuál es el derivado de cannabis más consumido?",
+    opciones: "Hachís,Polen,Rufis",
+    correcta: 0,
+    puntuacion: 1
+
+};
+
+var pregunta10 = {
+    pregunta: "Sabiendo lo que has investigado, ¿Te gustaría probar alguna sustancia ílicita?",
+    opciones: "Si,No,Tal vez",
+    correcta: 1,
     puntuacion: 1
 
 };
@@ -131,6 +163,62 @@ document.getElementById("opc6_1").value = "0";
 document.getElementById("opc6_2").value = "1";
 document.getElementById("opc6_3").value = "2";
 
+
+//Pregunta 7
+
+var trozos7 = pregunta7.opciones.split(",");
+document.getElementById("pregunta7").innerHTML = "<span class=material-icons>settings</span> " + pregunta7.pregunta;
+document.getElementById("t7_opc1").innerHTML = trozos7[0];
+document.getElementById("t7_opc2").innerHTML = trozos7[1];
+document.getElementById("t7_opc3").innerHTML = trozos7[2];
+
+
+document.getElementById("opc7_1").value = "0";
+document.getElementById("opc7_2").value = "1";
+document.getElementById("opc7_3").value = "2";
+
+
+//Pregunta 8
+
+var trozos8 = pregunta8.opciones.split(",");
+document.getElementById("pregunta8").innerHTML = "<span class=material-icons>settings</span> " + pregunta8.pregunta;
+document.getElementById("t8_opc1").innerHTML = trozos8[0];
+document.getElementById("t8_opc2").innerHTML = trozos8[1];
+document.getElementById("t8_opc3").innerHTML = trozos8[2];
+
+
+document.getElementById("opc8_1").value = "0";
+document.getElementById("opc8_2").value = "1";
+document.getElementById("opc8_3").value = "2";
+
+
+//Pregunta 9
+
+var trozos9 = pregunta9.opciones.split(",");
+document.getElementById("pregunta9").innerHTML = "<span class=material-icons>settings</span> " + pregunta9.pregunta;
+document.getElementById("t9_opc1").innerHTML = trozos9[0];
+document.getElementById("t9_opc2").innerHTML = trozos9[1];
+document.getElementById("t9_opc3").innerHTML = trozos9[2];
+
+
+document.getElementById("opc9_1").value = "0";
+document.getElementById("opc9_2").value = "1";
+document.getElementById("opc9_3").value = "2";
+
+
+//Pregunta 10
+
+var trozos10 = pregunta10.opciones.split(",");
+document.getElementById("pregunta10").innerHTML = "<span class=material-icons>settings</span> " + pregunta10.pregunta;
+document.getElementById("t10_opc1").innerHTML = trozos10[0];
+document.getElementById("t10_opc2").innerHTML = trozos10[1];
+document.getElementById("t10_opc3").innerHTML = trozos10[2];
+
+
+document.getElementById("opc10_1").value = "0";
+document.getElementById("opc10_2").value = "1";
+document.getElementById("opc10_3").value = "2";
+
 function evaluar() {
     lleno = false;
     var p1 = document.cuestionario.p1;
@@ -139,6 +227,11 @@ function evaluar() {
     var p4 = document.cuestionario.p4;
     var p5 = document.cuestionario.p5;
     var p6 = document.cuestionario.p6;
+    var p7 = document.cuestionario.p7;
+    var p8 = document.cuestionario.p8;
+    var p9 = document.cuestionario.p9;
+    var p10 = document.cuestionario.p10;
+
 
     for (i = 0; i < p1.length; i++) {
         if (p1[i].checked) {
@@ -199,6 +292,46 @@ function evaluar() {
             }
         }
     }
+    if(lleno){
+        for (i = 0; i < p7.length; i++) {
+            if (p7[i].checked) {
+                lleno = true;
+                break;
+            } else {
+                lleno = false;
+            }
+        }
+    }
+    if(lleno){
+        for (i = 0; i < p8.length; i++) {
+            if (p8[i].checked) {
+                lleno = true;
+                break;
+            } else {
+                lleno = false;
+            }
+        }
+    }
+    if(lleno){
+        for (i = 0; i < p9.length; i++) {
+            if (p9[i].checked) {
+                lleno = true;
+                break;
+            } else {
+                lleno = false;
+            }
+        }
+    }
+    if(lleno){
+        for (i = 0; i < p10.length; i++) {
+            if (p10[i].checked) {
+                lleno = true;
+                break;
+            } else {
+                lleno = false;
+            }
+        }
+    }
 
 
 
@@ -210,6 +343,10 @@ function evaluar() {
     var r_p4 = document.forms["cuestionario"]["p4"].value;
     var r_p5 = document.forms["cuestionario"]["p5"].value;
     var r_p6 = document.forms["cuestionario"]["p6"].value;
+    var r_p7 = document.forms["cuestionario"]["p7"].value;
+    var r_p8 = document.forms["cuestionario"]["p8"].value;
+    var r_p9 = document.forms["cuestionario"]["p9"].value;
+    var r_p10 = document.forms["cuestionario"]["p10"].value;
 
 
     if (lleno) {
@@ -289,6 +426,58 @@ function evaluar() {
         } else {
             incorrectas += 1;
             var element = document.getElementById("img_p6");
+            element.classList.remove("correcta");
+            element.classList.add("incorrecta");
+        }
+
+        //evaluacion pregunta 7
+        if (r_p7 == pregunta7.correcta) {
+            correctas += 1;
+            var element = document.getElementById("img_p7");
+            element.classList.remove("incorrecta");
+            element.classList.add("correcta");
+        } else {
+            incorrectas += 1;
+            var element = document.getElementById("img_p7");
+            element.classList.remove("correcta");
+            element.classList.add("incorrecta");
+        }
+
+        //evaluacion pregunta 8
+        if (r_p8 == pregunta8.correcta) {
+            correctas += 1;
+            var element = document.getElementById("img_p8");
+            element.classList.remove("incorrecta");
+            element.classList.add("correcta");
+        } else {
+            incorrectas += 1;
+            var element = document.getElementById("img_p8");
+            element.classList.remove("correcta");
+            element.classList.add("incorrecta");
+        }
+
+        //evaluacion pregunta 9
+        if (r_p9 == pregunta9.correcta) {
+            correctas += 1;
+            var element = document.getElementById("img_p9");
+            element.classList.remove("incorrecta");
+            element.classList.add("correcta");
+        } else {
+            incorrectas += 1;
+            var element = document.getElementById("img_p9");
+            element.classList.remove("correcta");
+            element.classList.add("incorrecta");
+        }
+
+        //evaluacion pregunta 10
+        if (r_p10 == pregunta10.correcta) {
+            correctas += 1;
+            var element = document.getElementById("img_p10");
+            element.classList.remove("incorrecta");
+            element.classList.add("correcta");
+        } else {
+            incorrectas += 1;
+            var element = document.getElementById("img_p10");
             element.classList.remove("correcta");
             element.classList.add("incorrecta");
         }

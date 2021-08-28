@@ -177,7 +177,7 @@ hr {
 /*EVALUACIÓN*/
 .recuadro {
     width: 600px;
-    height: 155px;
+    height: 170px;
     background-color: rgba(4, 243, 243, 0.425);
     border-radius: 15px;
 }
@@ -240,7 +240,11 @@ label {
 #img_p3,
 #img_p4,
 #img_p5,
-#img_p6 {
+#img_p6,
+#img_p7,
+#img_p8,
+#img_p9,
+#img_p10 {
     margin-left: 34vw;
     position: absolute;
 }
