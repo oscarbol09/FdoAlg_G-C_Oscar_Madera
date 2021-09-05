@@ -105,24 +105,28 @@ hr {
 
 /* Tarjetas */
 
-.news-cards {
+.news-cards, 
+.news-cards2 {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 25px;
     margin: 70px 0;
 }
 
-.news-cards img {
+.news-cards img,
+.news-cards2 img {
     width: 100%;
     height: 180px;
 }
 
-.news-cards h3 {
+.news-cards h3,
+.news-cards2 h3 {
     font-size: 20px;
     margin: 10px 0;
 }
 
-.news-cards a {
+.news-cards a,
+.news-cards2 a {
     padding: 10px 0;
     color: #f2f2f2;
     text-transform: uppercase;
@@ -133,8 +137,13 @@ hr {
     /*Negrilla*/
 }
 
-.news-cards p {
+.news-cards p,
+.news-cards2 p {
     font-size: 18px;
+}
+
+.news-cards2 i{
+    color: rgb(15, 37, 238);
 }
 
 
